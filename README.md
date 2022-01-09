@@ -1,4 +1,4 @@
 # Data Analyst Portfolio Project Repository
-Repositorio de análisis de datos
+Repositorio de proyectos de análisis de datos
 
 Alan J. Orce Hernández
