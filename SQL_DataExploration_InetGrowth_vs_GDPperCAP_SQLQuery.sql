@@ -55,11 +55,11 @@ order by Average_since_1990 desc
 
 
 
-Select Entity, MAX(Internet_usage)/MIN(Internet_usage) as Internet_usage_growth
+Select Entity, MAX(Internet_usage)/MIN(Internet_usage) as Internet_usage_growth_last_20_years
 From PortfolioProject..Pop_using_Inet
-where Internet_usage is not null and Internet_usage <> 0
+where Internet_usage is not null and Internet_usage <> 0 and CONVERT(numeric, Year) BETWEEN 1999 AND 2019
 Group by Entity	
-order by Internet_usage_growth desc
+order by Internet_usage_growth_last_20_years desc
 
 
 
